@@ -5,7 +5,10 @@ on:
       [opened, closed]
       # - opened
       # - closed
+<<<<<<< HEAD
   workflow_dispatch:
+=======
+>>>>>>> 170ddbecf12f9a5f2a43ffe19f12e9686d09f466
 jobs:
   deploy:
     runs-on: ubuntu-latest
