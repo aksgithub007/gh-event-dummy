@@ -5,7 +5,18 @@ on:
       [opened, closed]
       # - opened
       # - closed
+    branches:
+      - main # main
+      - dev-* # dev-final dev-staged dev-any
+      - feature/** # feature/abc feature/xyz/abc
   workflow_dispatch:
+  push:
+    branches:
+      - main # main
+      - dev-* # dev-final dev-staged dev-any
+      - feature/** # feature/abc feature/xyz/abc
+    path-ignore:
+      - ".github/workflows/**"
 jobs:
   deploy:
     runs-on: ubuntu-latest
